@@ -27,7 +27,7 @@ resource "null_resource" "ssh_target" {
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/setup.sh",
-      "sudo /tmp/setup.sh ${var.php_version}",
+      "sudo /tmp/setup.sh ${var.php_version}"
     ]
   }
 

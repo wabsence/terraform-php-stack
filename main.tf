@@ -22,6 +22,7 @@ variable "installation_steps" {}
 
 
 
+
 module "install_dependencies" {
 
   count = contains(var.stack_modules, "dependencies") ? 1 : 0
